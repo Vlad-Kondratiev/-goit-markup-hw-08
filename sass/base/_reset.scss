@@ -22,3 +22,13 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+section,
+header,
+footer {
+  display: none;
+}
+
+.block {
+  display: block;
+}
