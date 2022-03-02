@@ -65,6 +65,18 @@ button {
   font-family: inherit;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -501,28 +513,27 @@ nav {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .clients {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
   height: 92px;
+  margin: 15px;
+  flex-basis: calc((100% - 60px) / 2);
 }
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    margin: 15px;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 
