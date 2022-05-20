@@ -91,8 +91,8 @@ button {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -513,12 +513,6 @@ nav {
   margin-left: 10px;
 }
 
-.clients {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
-
 .clients__item {
   height: 92px;
   margin: 15px;
@@ -838,7 +832,7 @@ nav {
 }
 
 .modal {
-  width: 530px;
+  width: 450px;
   min-height: 580px;
   background-color: #fff;
   padding: 40px;
@@ -849,6 +843,12 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close-btn__icon {
